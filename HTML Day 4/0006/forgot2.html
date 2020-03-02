@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body {
+			background-image: url('planetfor.jpg');
+		}
+	</style>
+	<style>
+
+
+		.button {
+			  display: inline-block;
+			  padding: 5px 10spx;
+ 			   font-size: 15px;
+ 			   cursor: pointer;
+			    text-align: center;
+ 			   text-decoration: none;
+ 			   outline: none;
+  			  color: white;
+ 			   background-color: grey;
+			    border: 2px;
+ 			   border-radius: 4px;
+ 			   box-shadow: 0 3px #333;
+			  }
+
+		.button:hover {background-color: olive }
+	</style> 
+</head>
+<script>
+	function authorize() {
+		document.write("Verified");
+		window.open("file:///C:/HTML/HTML%20Day%204/0006/new.html", "content");
+		}
+	function cancel() {
+		document.write("CANCEL");
+		window.open("file:///C:/HTML/HTML%20Day%204/0006/log.html","content");
+		}
+	function OTP() {
+		document.write("OTP");
+		window.open("file:///C:/HTML/HTML%20Day%204/0006/forgot2.html","content");
+		}
+</script>
+<body bgcolor="black">
+<form>
+<center>
+<body bgcolor="black">
+<h1 style="text-align:center ; font-size:300%; color: black; background-color:olive">Find Your Account</h1>
+<font size="20" color="olive">
+<li><font size="4" color="red"><u><i>Enter your email or phone number to find your account</u></i><br>
+<select>
+<option value="-1">Default</option>
+<option value="email">Email :   </option>
+<option value="phno">Ph. no :  </option>
+</select>
+<input name="email" class="inputtext" id="identify_email" autofocus="10" aria-label="Phone number or email address" type="text" placeholder="Phone number or email address"><br>
+OTP IS SENT !<br>
+<input name="otp" class="inputtext" id="identify_otp" autofocus="3" aria-label="otp" type="text" placeholder="       ENTER OTP" required><br>
+<button class="button" onClick="authorize()">Submit </button></font> <button class="button" onClick="cancel()"> Cancel</button></font>
+<button class="button" onClick="OTP()"> Resend OTP</button></font>
+</form>
+</body>
+</html>

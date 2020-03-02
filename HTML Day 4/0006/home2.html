@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta=name="viewport" content="width=device-width,initial-scale=0">
+
+<style>
+
+		body {
+			background-image: url('planet4.jpg');
+			background-repeat: no repeat;
+		}
+		.a {
+
+    			position:absolute;
+    			transition: .5s ease;
+    			top: 20px;
+   			right: 10px;
+
+
+
+			  border: none;
+			  outline: none;
+			  padding: 5px;
+			  display: inline-block;
+			  background-color: #f1f1f1;
+			  height:40px;
+			  width: 120px;
+			  transition: all 0.5s;
+			  cursor: none;
+			  font-size: 18px;
+			  text-align:center;
+			}
+
+		.active, .a:hover {
+			  padding-right: 35px;
+ 			 background-color: #333;
+  			color: white;
+			  }
+
+		.a span {
+			  cursor: none;
+			  display: inline-block;
+			  position: relative;
+			  transition: 0.5s;
+			}
+
+		.a span:after {
+ 			 content: '\00bb';
+			  color:white;
+			  position: absolute;
+			  opacity: 0;
+			  top: 0;
+			  right: 10px;
+			  transition: 0.5s;
+			}
+
+
+		.a:hover span {
+			  padding-right: 70px;
+			}
+
+		.a:hover span:after {
+			  opacity: 1;
+			  right: 1;
+			}
+</style>
+
+
+<style>
+		.b {
+
+    			position:absolute;
+   			transition: .5s ease;
+    			top: 20px;
+    			left: 10px;
+
+
+			  border: none;
+			  outline: none;
+			  padding: 0px;
+			  display: inline-block;
+			  background-color: #f1f1f1;
+			  height:40px;
+			  width: 130px;
+			  transition: all 0.5s;
+			  cursor: none;
+			  font-size: 18px;
+			  text-align:center;
+			}
+
+		.active, .b:hover {
+			  padding-right: 35px;
+ 			 background-color: #333;
+  			color: white;
+			  }
+
+		.b span {
+			  cursor: none;
+			  display: inline-block;
+			  position: relative;
+			  transition: 0.5s;
+			}
+
+		.b span:after {
+ 			 content: '\00ab';
+			  color:white;
+			  position: absolute;
+			  opacity: 0;
+			  top: 0;
+			  left: -5px;
+			  transition: 0.5s;
+			}
+
+
+		.b:hover span {
+			  padding-left: 40px;
+			}
+
+		.b:hover span:after {
+			  opacity: 1;
+			  right: 1;
+			}
+</style>
+
+
+
+
+<a href="#" target="content"><button class="a"  style="cursor: pointer"><span>Options</span></button></a></li>
+
+<a href="#" target="content"><button class="b"  style="cursor: pointer"><span>Dashboard</span></button></a></li>
+<center>
+<body bgcolor="black">
+<br><br><br><br><br><br><br><font color="orange" style="font-size:75px"><i>Welcome to MySPACE !</i></br></font>
+<!--<iframe width="450" height="250" src="https://www.youtube.com/embed/CZc9-IDohrk?autoplay=1&controls=0&loop=1" frameborder=0>
+</iframe> -->
+</body>
+
+</html>

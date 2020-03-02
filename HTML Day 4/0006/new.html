@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body {
+			background-image: url('planetfor.jpg');
+		}
+	</style>
+	<style>
+		.button {
+			  display: inline-block;
+			  padding: 5px 10spx;
+ 			   font-size: 15px;
+ 			   cursor: pointer;
+			    text-align: center;
+ 			   text-decoration: none;
+ 			   outline: none;
+  			  color: white;
+ 			   background-color: grey;
+			    border: 2px;
+ 			   border-radius: 4px;
+ 			   box-shadow: 0 3px #333;
+			  }
+
+		.button:hover {background-color: olive }
+	</style>
+
+<script>
+	function login(){
+		document.write("Login");
+		window.open("file:///C:/HTML/HTML%20Day%204/0006/log.html","content");
+		}
+	function cancel() {
+		window.open("file:///C:/HTML/HTML%20Day%204/0006/log.html","content");
+		}
+</script>
+<body bgcolor="black">
+<form>
+</head>
+	<center>
+	<h2 style="text-align:center ; font-size:300%; color: black; background-color:olive">Enter New Credentials</h2>
+	<font size="5" color="olive">
+	New Username :<input type=text name=username placeholder="Username" required/> <br>
+	New Password :<input type=password name=password placeholder="Password" required /> <br>
+	<button class="button" onClick="login()">Submit</button>
+	<button class="button"onClick="cancel()">Cancel</button></font> <br>
+</form>
+</body>
+</html>

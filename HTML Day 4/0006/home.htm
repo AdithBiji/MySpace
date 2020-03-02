@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta=name="viewport" content="width=device-width,initial-scale=0">
+
+<style>
+
+		body {
+			background-image: url('planet4.jpg');
+			background-repeat: no repeat;
+		}
+		.a {
+
+			  border: none;
+			  outline: none;
+			  padding: 5px;
+			  display: inline-block;
+			  background-color: #f1f1f1;
+			  height:40px;
+			  width: 120px;
+			  transition: all 0.5s;
+			  cursor: none;
+			  font-size: 18px;
+			  text-align:center;
+			}
+
+		.active, .a:hover {
+			  padding-right: 35px;
+ 			 background-color: #333;
+  			color: white;
+			  }
+
+		.a span {
+			  cursor: none;
+			  display: inline-block;
+			  position: relative;
+			  transition: 0.5s;
+			}
+
+		.a span:after {
+ 			 content: '\00bb';
+			  color:white;
+			  position: absolute;
+			  opacity: 0;
+			  top: 0;
+			  right: 10px;
+			  transition: 0.5s;
+			}
+
+
+		.a:hover span {
+			  padding-right: 70px;
+			}
+
+		.a:hover span:after {
+			  opacity: 1;
+			  right: 1;
+			}
+</style>
+
+
+<div align="right">
+<a href="#" target="content"><button class="a"  style="cursor: pointer"><span>Options</span></button></a></li>
+</div>
+<center>
+<body bgcolor="black">
+<br><br><br><br><font color="orange" style="font-size:75px"><i>Welcome to MySPACE !</i></br></font>
+<h2><a href="file:///C:/HTML/HTML%20Day%204/0006/log2.html" target="content" style="text-decoration:none" ><font color="sky blue" size="5"><i>Login</i></a></font><font color="white" size="5"> to view dashboard.</font>
+</body>
+
+</html>

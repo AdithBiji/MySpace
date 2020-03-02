@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arun Clinical Laboratory</title>
+<link rel="shortcut icon" href="acl.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+
+ ul {
+  list-style-type: none;
+  z-index:3;
+  margin: 0;
+  padding: 1px;
+  overflow: hidden;
+  background-color: black;
+  position: -webkit-sticky;/*Safari*/
+  position: sticky;
+  top: 0;
+}
+
+.a {
+  border: none;
+  outline: none;
+  top:0;
+  float:left;
+  padding:  5px 96.69px;
+  display: inline;
+  color:white;
+  background-color: black;
+  height: 55px;
+  width: cover;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.active, .a:hover {
+  background-color: #4CAF50;
+  text-shadow: 1px 2px 10px #000;
+  color: #E5E7E9;
+  }
+
+img {
+  
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding:15px;
+	}
+	
+	div1 {
+  		border: 1px solid black;
+  		padding: 10px 10px;
+		top: 260px;
+		right:30px;
+		width: 320px;
+  		height: 429px;
+		position: absolute;
+  		text-align:justify;
+  		}
+		
+		h1 { 
+		text-align: center;
+		text-transform: uppercase;
+		color:#4CAF50; 
+		}
+
+		p1 {
+		line-height:2;
+  		text-align: center;
+  		letter-spacing: 3px;
+		}
+
+		a {
+  		text-decoration: none;
+  		color: #008CBA;
+		}
+
+
+	div2 {
+  		border: 1px solid green;
+		background-color:white;
+  		padding:0px;
+		top: 760px;
+	         left:90px;
+		width: 1200px;
+  		height: 120px;
+		position: absolute;
+  		text-align:justify;
+  		}
+		
+		h2 {
+                  
+		line-height:0.5;
+		text-align:center;
+		color:black;
+  		letter-spacing: 1px;
+		}
+				
+.footer {
+  background-color: black;
+  position: relatives;
+  left: 0;
+  bottom: 0;
+  width: auto;
+  color:white;
+  padding: 5px;
+}
+
+.button {
+  background-color:#46a049;
+  color: white;
+  border:2px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.button {
+  -webkit-transition-duration: 0.3s; 
+  transition-duration: 0.3s;
+}
+.button:hover {
+  background-color:white; 
+  color: green;
+}
+
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+  
+}
+* {
+  box-sizing: border-box;
+	
+}
+
+body1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.column {
+  float: left;
+  width: 25%;
+  margin-top:50px;
+  margin-bottom:70px;
+  padding: 0 170px;
+}
+
+
+.row {margin: 0 -5px;}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Style the counter cards */
+div.card {
+  width: 300px;
+  height: 350px;
+  color:white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  background-color:black;
+}
+
+div.header {
+  background-color:#4CAF50;
+  color: white;
+  padding: 2px;
+  font-size: 30px;
+}
+
+div.body1 { 
+  color: white;
+  height: 150px;
+  background-color: black;
+  text-align:left;
+  padding: 2px;
+  font-size: 20px;
+}
+
+body2{
+  position:relative;
+  color: white;
+  height: 150px;
+  width:50%;
+  background-color: black;
+  text-align:left;
+  
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.body2:hover .image {
+  opacity: 0.3;
+}
+.body2:hover .text{
+  opacity: 1;
+  transition: .5s ease;
+  position: absolute; 
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+
+div.container {
+  padding: 10px;
+  color: black;
+}
+
+.a1{ 
+ text-decoration:none; 
+ color:white;
+  }
+
+.img-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  border: 10px solid #f1f1f1;
+  position: absolute;
+  top: 210%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 500px;
+  padding: 20px;
+  text-align: center;
+  text-decoration:none;
+}
+
+.img-text:hover { background-color: rgba(0,0,0, 0.8); transition:0.5s; }
+
+
+</style>
+
+</head>
+
+<body>
+<img src="ACLlogo.jpg" alt="Header Logo" style="height:180px;width:1200px;image-position:center;">
+<ul>  
+<div id="myDiv" >
+  <a href="ACLHomePage.html" target="_self"><button class="a">Home</button></a>
+  <a href="file:///C:/HTML/ACL-Module1/ACL_App.html" target="_self"><button class="a">ACL App</button></a>
+  <button class="a">Diagonostics</button>
+  <button class="a">Contact</button>
+  <button class="a">About us</button>
+</div>
+
+</ul>
+<img src="tvm1.jpg" height="450" width="900">
+<div1>
+
+  		<h1>Arun Clinical Laboratory</h1>
+  		<p1 style="letter-spacing: 1px;" ><strong>Arun Clinical Laboratories was initiated by <a target="content" href="Arunaisathya.html">Arunaisathya Organization.</a> 
+		For more than a decade, it has been providing a quality and preventive healthcare services sucessfully.</strong>
+		</p1>
+</div1>
+
+<div2>
+	<img class="img2" src="miniACL.jpg" alt="Header Logo" style="height:100px;width:100px;float: left;">
+<h2><br> <i>"Health is not state of absence of disease, it is a ability to deal with them." </i></h2>	
+<p style="text-align:center;font-size:120%;"><b>- <a href="aboutus.html" >Arumugam Kathavarayan <a></b></p>
+</div2>
+
+
+
+   
+	<img src="steth.jpg" width="1300" height="900" align="right" border="1">
+   			<a href="www.arunlabs.com" style="text-decoration:none;color:white"><div class="img-text">EXPLORE ACL</div></a>	</div>
+
+
+<div class="row">
+  <div class="column">
+    	<div class="card">
+  		<div class="header">
+    			<h5>Campaigns by ACL</h5>
+		</div>
+		<div class="body1">
+			<ul><br>
+	  		<li>- Blood Donation</li><br>
+	  		<li>- Blood Test</li>
+			</ul>
+			<p style="text-indent:20px;">And More...</p>
+  		</div>
+		<div class="container">
+    			<a class="button"><span>Organise</a></span>
+		</div>
+	</div>
+   </div>
+  
+  <div class="column">
+     	<div class="card">
+		<div class="header">
+    			<h5>Shop on Pharmacy</h5>
+		</div>
+			<div class="body2">
+		    		<a href="ACLBody.html" >
+				<img src="tablets.jpg" height="210" class="image"width="auto"></a>
+			</div>
+	 </div>
+   </div>
+    
+  
+   <div class="column">
+     	<div class="card">
+		<div class="header">
+    			<h5>Book an Appointment</h5>
+		</div>
+			<div class="body2">
+				<a href="ACLBody.html" >
+					<img src="appointment.jpg" height="210" class="image" style="width:100%"></a>
+		
+			</div>
+  		
+	</div>
+   </div>
+
+</div>
+
+<div class="footer" style="text-align:center">
+<p>Copyrights - Arun Clinical Laboratories &copy;  | Arunaisathya Organization </p>
+</div>
+
+
+	
+<script>
+var header= document.getElementById("myDiv");
+var as = header.getElementsByClassName("a");
+for (var i = 0; i < as.length; i++) {
+  as[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  if (current.length > 0) { 
+    current[0].className = current[0].className.replace(" active", "");
+  }
+  this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
+
+
+

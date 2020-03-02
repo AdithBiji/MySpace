@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta=name="viewport" content="width=device-width,initial-scale=0">
+<style>
+		body {
+			background-image: url('planet3.jpg');
+		}
+		ul {
+ 			 list-style-type: none;
+ 			 margin: 0.5;
+  			padding:0;
+  			width:165px;
+  			background-color: #4d4d4d;
+			}
+
+		.a {
+  			border: none;
+  			outline: none;
+ 			padding: 20px;
+  			display: inline-block;
+  			background-color: #f1f1f1;
+  			height:65px;
+  			width: 165px;
+  			transition: all 0.5s;
+  			cursor: pointer;
+  			font-size: 15px;
+  			text-align:center;
+			}
+
+		.active, .a:hover {
+  			padding-right: 45px;
+  			background-color: #333;
+  			}
+
+		.a span {
+  			cursor: pointer;
+  			display: inline-block;
+  			position: relative;
+  			transition: 0.5s;
+			}
+
+		.a span:after {
+  			content: '\00bb';
+  			color:white;
+  			position: absolute;
+  			opacity: 0;
+  			top: 0;
+  			right: 25px;
+  			transition: 0.5s;
+			}
+
+
+		.a:hover span {
+ 			padding-right: 40px;
+			}
+
+		.a:hover span:after {
+  			opacity: 1;
+  			right: 1;
+			}
+
+</style>
+</head>
+<body bgcolor="black">
+<font color="white" size="6">
+<i><u>Dashboard</u></font><br><br>
+<i>
+<ul>
+<div id="myDIV">
+<li> <a href="file:///C:/HTML/HTML%20Day%204/0006/blog.html" target="content"><button class="a" ><font color="olive" style="font-size:28px;"><span>MyBlog</span></button></a></li>
+<li> <a href="file:///C:/HTML/HTML%20practice/bla.html" target="content"><button class="a" ><font color="olive" style="font-size:28px;"><span>MyPage</span></button></a></li>
+<li> <a href="file:///C:/HTML/HTML%20practice/shop.html" target="content"> <button class="a"><font color="olive" style="font-size:28px;"><span>MyMart</span></button>
+<li> <a href="file:///C:/HTML/ACL-Module1/ACLHomePage.html" target="content"> <button class="a"><font color="olive" style="font-size:28px;"><span>MyCare</span></button>
+<!--<li> <a href="file:///C:/HTML/HTML%20Day%201/0001/Shortcut.htm" target="content"><button class="a" ><font color="olive" style="font-size:28px;"><span>MyLinks</span></button></a></li>-->
+<!--<li> <a href="file:///C:/HTML/HTML%20Day%204/0006/extras.html" target="content"> <button class="a"><font color="olive" style="font-size:28px;"><span>MyExtras</span></button>-->
+</div>
+</ul>
+<script>
+var header = document.getElementById("myDIV");
+var as = header.getElementsByClassName("a");
+for (var i = 0; i < as.length; i++) {
+  as[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  if (current.length > 0) { 
+    current[0].className = current[0].className.replace(" active", "");
+  }
+  this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>

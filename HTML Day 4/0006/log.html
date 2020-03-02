@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body {
+			background-image: url('planetlog.jpg') ;
+		}
+
+		.button {
+			  display: inline-block;
+			  padding: 2px;
+ 			   font-size: 15px;
+ 			   cursor: pointer;
+			    text-align: center;
+ 			   text-decoration: none;
+ 			   outline: none;
+  			  color: white;
+ 			   background-color: grey;
+			    border: 2px;
+ 			   border-radius: 4px;
+ 			   box-shadow: 0 3px #333;
+			  }
+
+		.button:hover {background-color: olive}
+
+		.box{
+			display: table;
+			//background-color: white;
+			box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+			//background-image: url('planetlog.jpg')
+			padding : 8px 8px 8px 8px;
+			border: -20px;
+			top: 20px;
+			}
+
+		.text{
+			size: 10px;
+			padding: 10px 10px 10px 10px;s
+			}
+	</style>
+</head>
+
+<script>
+	function authourize() {
+		var username = window.document.forms[0].username.value;
+		var password = window.document.forms[0].password.value;
+		if(username == "Adith" && password == "Welcome@123" || username == "Arun" && password == "Welcome@123" || username == "Arwind" && password == "Welcome@123" || username == "Akshay" && password == "Welcome@123" || username == "Devaraj" && password == "Welcome@123" || username == "Malavika" && password == "Welcome@123" ) {
+			document.write("You are an Authorized User");
+			window.open("file:///C:/HTML/HTML%20Day%204/0006/links.htm", "lspace");
+			window.open("file:///C:/HTML/HTML%20Day%204/0006/home2.html", "content");
+			window.open("file:///C:/HTML/HTML%20Day%204/0006/header2.html", "head");
+			window.open("file:///C:/HTML/HTML%20Day%204/0006/rspace2.html", "Rspace");			
+		} else {
+			
+			alert(" Credentials are Incorrect");
+		}
+	}
+	function forgot() {
+			window.open("file:///C:/HTML/HTML%20Day%204/0006/forgot.html", "content");
+		}
+
+	function cancel() {
+		window.open("file:///C:/HTML/HTML%20Day%204/0006/home.htm","content");
+		}
+</script>
+<body bgcolor="black">
+<form>
+	<center>
+<br><br><br><br>
+	<div class="box">
+	<h1 style="font-size:300%; color: black; background-color:olive">&nbsp&nbsp&nbsp&nbsp Login Page &nbsp&nbsp&nbsp&nbsp</h1>
+	<font size="6" color="olive">
+	<input type=text class="text" name="username" placeholder="Username" required/> <br>
+	<input type=password class="text" name="password" placeholder="Password" required /> <br>
+	<button class="button" onClick="authourize()">Login</button>&nbsp
+	<button class="button"onClick="cancel()">Cancel</button></font> <br><br>
+	<button class="button" onClick="forgot()">Forgot</button></font>
+	<br><br><br>Click here to <a href="file:///C:/HTML/HTML%20Day%204/0006/register.htm">register</a>
+	</div>
+	</center>
+</form>
+</body>
+</html>
