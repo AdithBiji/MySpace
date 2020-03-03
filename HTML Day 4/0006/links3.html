@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="style.css">
 <meta=name="viewport" content="width=device-width,initial-scale=0">
 <style>
 		body {
@@ -12,52 +13,6 @@
   			padding:0;
   			width:165px;
   			background-color: #4d4d4d;
-			}
-
-		.a {
-  			border: none;
-  			outline: none;
- 			padding: 20px;
-  			display: inline-block;
-  			background-color: #f1f1f1;
-  			height:65px;
-  			width: 165px;
-  			transition: all 0.5s;
-  			cursor: pointer;
-  			font-size: 15px;
-  			text-align:center;
-			}
-
-		.active, .a:hover {
-  			padding-right: 45px;
-  			background-color: #333;
-  			}
-
-		.a span {
-  			cursor: pointer;
-  			display: inline-block;
-  			position: relative;
-  			transition: 0.5s;
-			}
-
-		.a span:after {
-  			content: '\00bb';
-  			color:white;
-  			position: absolute;
-  			opacity: 0;
-  			top: 0;
-  			right: 25px;
-  			transition: 0.5s;
-			}
-
-
-		.a:hover span {
- 			padding-right: 40px;
-			}
-
-		.a:hover span:after {
-  			opacity: 1;
-  			right: 1;
 			}
 
 </style>
@@ -87,8 +42,24 @@ for (var i = 0; i < as.length; i++) {
   }
   this.className += " active";
   });
+  
 }
 </script>
-
+<script>
+	function logout(){
+		window.open("file:///C:/HTML/HTML%20Day%204/0006/home.htm","content");
+		window.open("file:///C:/HTML/HTML%20Day%204/0006/links2.html","lspace");
+		window.open("file:///C:/HTML/HTML%20Day%204/0006/header.htm","head");
+		window.open("file:///C:/HTML/HTML%20Day%204/0006/rspace1.html","Rspace");
+		}
+	function about(){
+		window.open("file:///C:/HTML/HTML%20Day%204/0006/about.html","content");
+		}
+</script>
+<body bgcolor="#4668AD" >
+	<div align="left"><br><br>
+	<button onClick="logout()" class="button2"><font color="orange"><i>LOGOUT</a></font></button><br><br>
+	<button onClick="about()" class="button2" style="cursor: help"><font color="orange"><i>ABOUT US</a></font></button><br>
+	</div>
 </body>
 </html>

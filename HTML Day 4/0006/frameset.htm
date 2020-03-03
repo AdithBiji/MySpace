@@ -21,24 +21,20 @@ function modify()
 }
 function big()
 {
-    if(already)frameset.setAttribute("cols","13.5%,*, 0.1%");
-}
-function big2()
-{
-    if(already)frameset.setAttribute("cols","0.1%,*,13.5%");
+    if(already)frameset.setAttribute("cols","13.5%,*");
 }
 function small()
 {
-    if(already)frameset.setAttribute("cols","0.1%,*,0.1%");
+    if(already)frameset.setAttribute("cols","0.1%,*");
 }
 
 </script>
 </head>
 <frameset rows="11.5%, *">
 	<frame name="head" src="file:///C:/HTML/HTML%20Day%204/0006/header.htm" frameborder="0" />
-<frameset cols="0.1%,*,0.1%" id="frame" >
-	<frame name="lspace" src="file:///C:/HTML/HTML%20Day%204/0006/links2.html" frameborder="0" OnMouseOver="big();" OnMouseOut="small();"/>
-	<frame name="content" src="file:///C:/HTML/HTML%20Day%204/0006/home.htm" frameborder="0"  />
-	<frame name="Rspace" src="file:///C:/HTML/HTML%20Day%204/0006/rspace1.html" frameborder="0" OnMouseOver="big2();" OnMouseOut="small();"/>
+<frameset cols="0.1%,*" id="frame" >
+	<frame name="lspace" src="file:///C:/HTML/HTML%20Day%204/0006/rspace1.html" frameborder="0" OnMouseOver="big();" OnMouseOut="small();"/>
+	<!--<frame name="content" src="file:///C:/HTML/HTML%20Day%204/0006/home.htm" frameborder="0"  /> -->
+	<frame name="content" src="file:///C:/HTML/HTML%20Day%204/0006/bla2.html" frameborder="0"  />
 </frameset>
 </html
