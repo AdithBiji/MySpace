@@ -43,8 +43,9 @@
 	</style>
 	
 	<script>
-		function cancel() {
-		window.open("file:///C:/HTML/HTML%20Day%204/0006/bla2.html","content");
+		function Submit() {
+		window.open("file:///C:/HTML/HTML%20Day%204/0006/bla3.html","content");
+		alert("Sign Up Successful!");
 		}
 	</script>
 </head>
@@ -52,7 +53,7 @@
 <center>
 <div class = "box">
 <h1 style="text-align:center ; font-size:300%; color: black; background-color:olive">Registration Page</h1>
-<form action="file:///C:/HTML/HTML%20Day%204/0006/home.htm" style="text-align:center" target="content">
+<form action="file:///C:/HTML/HTML%20Day%204/0006/bla3.html" style="text-align:center" target="content">
 <font size="20" color="olive">
 <div class="text">
 <input type=text class="text" name="username" placeholder="Username" required/> <br>
@@ -73,9 +74,9 @@ D.O.B : <input type="date" id="dob"/><br>
 Email id : <input type="textarea"  form="regform"></textarea><br>
 Privacy Policy : <input type="checkbox" name="privacy" value="policy" required> I here by agree to the <a href="https://policies.google.com/privacy?hl=en-US
 ">privacy policy</a><br>
-<input type="Submit" value=Submit class="button">&nbsp&nbsp
+<input type="Submit" onClick="Submit()" value=Submit class="button">&nbsp&nbsp
 <input type="Reset" value=Reset class="button"></br>
-<button onClick="cancel()" class="button">Cancel</button></font> <br></font>
+<button type="Cancel" value=Cancel class="button" href="file:///C:/HTML/HTML%20Day%204/0006/bla3.html">Cancel</button></font> <br></font>
 Click here to <a href="file:///C:/HTML/HTML%20Day%204/0006/log.html">login</a>
 </div>
 </div>
