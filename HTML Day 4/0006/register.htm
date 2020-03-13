@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<style>
 		body {
 			background-image: url('planetlog.jpg');
@@ -9,37 +10,8 @@
 			window.open("file:///C:/HTML/HTML%20Day%204/0006/home.htm","content");
 		}
 		
-		.box{
-			display: table;
-			//background-color: white;
-			box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-			//background-image: url('planetlog.jpg')
-			padding : 8px 8px 8px 10px;
-			border: -20px;
-			top: 20px;
-			}
 
-		.text{
-			size: 10px;
-			padding: 10px 10px 10px 10px;s
-			}
 
-		.button {
-			  display: inline-block;
-			  padding: 2px;
- 			   font-size: 15px;
- 			   cursor: pointer;
-			    text-align: center;
- 			   text-decoration: none;
- 			   outline: none;
-  			  color: white;
- 			   background-color: grey;
-			    border: 2px;
- 			   border-radius: 4px;
- 			   box-shadow: 0 3px #333;
-			  }
-
-		.button:hover {background-color: olive}
 	</style>
 	
 	<script>
@@ -53,14 +25,15 @@
 <center>
 <div class = "box">
 <h1 style="text-align:center ; font-size:300%; color: black; background-color:olive">Registration Page</h1>
-<form action="file:///C:/HTML/HTML%20Day%204/0006/bla3.html" style="text-align:center" target="content">
+<form style="text-align:center" action="file:///C:/HTML/HTML%20Day%204/0006/bla3.html" style="text-align:center" target="content">
 <font size="20" color="olive">
-<div class="text">
-<input type=text class="text" name="username" placeholder="Username" required/> <br>
+<div class="text" style="align:center">
+	<center>
+		<input type=text class="text" name="username" placeholder="Username" required/> <br>
 <input type=password class="text" name="password" placeholder="Password" required /> <br>
 <input type=password class="text" name="password2" placeholder="Retype Password" required /> <br>
 <ul >
-<font size="5" color="olive"> Language : <select>
+<font size="5" color="olive"> Language : <select class="text">
 <option value="-1">Default</option>
 <option value="English">English</option>
 <option value="Hindi">Hindi</option>
@@ -71,7 +44,7 @@
 <br>
 Choose Mode : <input type="radio" name="mode" value="user" checked>User<input type="radio" name="mode" value="retailer">Retailer<br>
 Gender : <input type="radio" name="gender" value="male"checked>Male<input type="radio" name="gender" value="female">Female<br>
-Email id : <input type="text"  name="email"></textarea><br>
+Email id : <input type="email" class="text" name="email"></textarea><br>
 I am above the age of 18 : <input type="checkbox" name="age" required><br>
 Privacy Policy : <input type="checkbox" name="privacy" value="policy" required> I here by agree to the <a href="https://policies.google.com/privacy?hl=en-US
 ">privacy policy</a><br>
@@ -82,5 +55,7 @@ Click here to <a href="file:///C:/HTML/HTML%20Day%204/0006/log.html">login</a>
 </div>
 </div>
 </form>
+</center>
+
 </body>
 </html>

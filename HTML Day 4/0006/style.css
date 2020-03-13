@@ -1,18 +1,4 @@
-.button {
-    display: inline-block;
-    padding: 4px;
-    font-size: 15px;
-    font-style: bold;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: white;
-    background-color: grey;
-    border: 5px;
-    border-radius: 3px;
-    box-shadow: 0 5px #333;
-}
+
 
 .button:hover {
     background-color: white;
@@ -20,34 +6,32 @@
     box-shadow: none
 }
 
-.box {
-    display: table;
-    //background-color: white;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    //background-image: url('planetlog.jpg')
-    padding: 8px 8px 8px 8px;
-    border: -20px;
-    top: 20px;
-}
+
 
 .text {
-    size: 10px;
+    
     padding: 10px 10px 10px 10px;
-    s
+    border-radius: 18px;
+    border:none;
+    position : relative;
+    
 }
 
 .box {
-    display: table; //background-color: white; box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
-    rgba(0, 0, 0, 0.19); //background-image: url('planetlog.jpg') padding: 8px 8px 8px 10px; border: -20px; top: 20px; } .text { size: 10px; padding: 10px 10px 10px 10px; s } .button { display: inline-block; padding: 2px; font-size: 15px; cursor:
-    pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: white;
-    background-color: grey;
-    border: 2px;
-    border-radius: 4px;
-    box-shadow: 0 3px #333;
+  display: table; //background-color: white; box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+  rgba(0, 0, 0, 0.19); //background-image: url('planetlog.jpg') padding: 8px 8px 8px 10px; border: -20px; top: 20px; } 
+  .button{ 
+  display: inline-block; padding: 2px; font-size: 15px; 
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: grey;
+  border: 2px;
+  border-radius: 4px;
+  box-shadow: 0 3px #333;
+  text-align: center;
 }
 
 .button2 {
