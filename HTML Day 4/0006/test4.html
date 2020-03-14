@@ -6,42 +6,17 @@
 		body {
 			background-image: url('planetlog.jpg');
 		}
-
-		
-
-
 	</style>
 	
 	<script>
-		var log;
-		function donne()
-		{
-			window.open("file:///C:/HTML/HTML%20Day%204/0006/bla3.html","content");
-		}
-		function validateForm()
-		{
-		  var x = window.document.forms[0].password.value;
-		  var y = window.document.forms[0].password2.value;
-		  if (x==y)
-		  {
-			donne();
-			alert("SignUp Successful!")
-		  }
-		  else
-		  {
-			alert("Passwords don't match!"); 
-			return log=false;
-		  }
-
-		}
 		
-		
-		var check = function()
+	var check = function()
 	{
 	  if (document.getElementById('password').value == document.getElementById('confirm_password').value)
 	  {
 		document.getElementById('message').style.color = 'green';
 		document.getElementById('message').innerHTML = 'passwords match';
+		window.open("file:///C:/HTML/HTML%20Day%204/0006/bla3.html","content");
 	  } 
 	  else
 	  {
@@ -50,7 +25,12 @@
 	  }
 	}
 	
-		</script>
+	function check()
+	{
+		window.open("file:///C:/HTML/HTML%20Day%204/0006/bla3.html","content");
+	}
+	</script>
+	
 </head>
 <body bgcolor="black">
 <center>
@@ -59,15 +39,15 @@
 <h1 style="text-align:center ; font-size:300%; color: black; background-color:olive">Registration Page</h1>
 
 
-<form onsubmit="return validateForm()" action="file:///C:/HTML/HTML%20Day%204/0006/bla3.html">
+<form  >
 <font size="20" color="olive">
 <div class="text">
 <input type=text class="text" name="username" placeholder="Username" required/> <br>
-<input type=password class="text" id="password"  name="password" onkeyup="check()" placeholder="Password" required /> <br>
-<input type=password class="text" id="confirm_password" name="password2" onkeyup="check()" placeholder="Retype Password" required /> <br>
+<input name="password" id="password" type="password" class="text" onkeyup="check()" placeholder="Password" required /> <br>
+<input type="password" name="confirm_password" id="confirm_password" class="text" onkeyup="check()" placeholder="Retype Password" required /> <br>
 <span style="font-size: 25px;" id='message'></span>
 
-<br><input type="email" class="text" name="email" placeholder="Email ID" required></textarea><br>
+<br><input type="email" class="text" name="email" placeholder="Email ID"></textarea><br>
 <font size="5" color="olive">
 <select class="text">
 <option value="-1">Language</option>
@@ -79,14 +59,14 @@
 
 Gender : <input type="radio" name="gender" value="male">Male<input type="radio" name="gender" value="female">Female<br>
 Mode : <input type="radio" name="mode" value="user" checked>User<input type="radio" name="mode" value="retailer">Retailer<br>
-<!--I am above the age of 18 : <input type="checkbox" name="age" class="checkmark" required><br>-->
+<!--I am above the age of 18 : <input type="checkbox" name="age" class="checkmark" required><br>
 &nbsp&nbsp&nbsp&nbsp<input type="checkbox" name="privacy" value="policy"   required> I here by agree to the <a href="https://policies.google.com/privacy?hl=en-US
 ">privacy policy</a><br>
-I am above the age of 18 : <input type="checkbox" name="age"  ><br>
-<input type="submit" value=Submit class="button" />&nbsp&nbsp
-<input type="reset" value=Reset class="button" />&nbsp&nbsp
-<button type="button" value=Cancel class="button" onclick="donne()" href="file:///C:/HTML/HTML%20Day%204/0006/bla3.html">Cancel</button></font> <br></font>
-Click here to <a href="file:///C:/HTML/HTML%20Day%204/0006/log2.html"><font color="sky blue" size="3">login</font></a><br>
+I am above the age of 18 : <input type="checkbox" name="age"  ><br>-->
+<input type="submit" value="submit" class="button" href="file:///C:/HTML/HTML%20Day%204/0006/bla3.html" >&nbsp&nbsp
+<input type="reset"  class="button">&nbsp&nbsp
+<button type="button"  class="button" onclick="nextpage()">Cancel</button></font> <br></font>
+Click here to <a href="file:///C:/HTML/HTML%20Day%204/0006/log.html"><font color="sky blue" size="3">login</font></a><br>
 </div>
 </div>
 </form>
