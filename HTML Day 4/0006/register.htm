@@ -6,56 +6,72 @@
 		body {
 			background-image: url('planetlog.jpg');
 		}
-		function cancel() {
-			window.open("file:///C:/HTML/HTML%20Day%204/0006/home.htm","content");
-		}
+
 		
 
 
 	</style>
 	
 	<script>
-		function Submit() {
-		window.open("file:///C:/HTML/HTML%20Day%204/0006/bla3.html","content");
-		alert("Sign Up Successful!");
+				function cancel() {
+			window.open("file:///C:/HTML/HTML%20Day%204/0006/bla3.html","content");
 		}
-	</script>
+		function validateForm() {
+		  var x = window.document.forms[0].password.value;
+		  var y = window.document.forms[0].password2.value;
+		  if (x!=y)
+		  {
+			alert("Passwords don't match");
+		  }
+		  else
+		  {
+			//window.open("file:///C:/HTML/HTML%20Day%204/0006/bla3.html","content");
+			window.open("file:///C:/HTML/HTML%20Day%204/0006/rspace2.html", "lspace");
+			window.open("file:///C:/HTML/HTML%20Day%204/0006/test.html", "content");
+			window.open("file:///C:/HTML/HTML%20Day%204/0006/header.htm", "head");
+			alert("Welcome To MySpace!");  
+		  }
+		}
+		</script>
 </head>
 <body bgcolor="black">
 <center>
+	<ul >
 <div class = "box">
 <h1 style="text-align:center ; font-size:300%; color: black; background-color:olive">Registration Page</h1>
-<form style="text-align:center" action="file:///C:/HTML/HTML%20Day%204/0006/bla3.html" style="text-align:center" target="content">
+
+
+<form style="text-align:center" onsubmit="validateForm()">
 <font size="20" color="olive">
-<div class="text" style="align:center">
+<div class="text">
 	<center>
 		<input type=text class="text" name="username" placeholder="Username" required/> <br>
 <input type=password class="text" name="password" placeholder="Password" required /> <br>
 <input type=password class="text" name="password2" placeholder="Retype Password" required /> <br>
-<ul >
-<font size="5" color="olive"> Language : <select class="text">
-<option value="-1">Default</option>
+
+<input type="email" class="text" name="email" placeholder="Email ID"></textarea><br>
+<font size="5" color="olive">
+<select class="text">
+<option value="-1">Language</option>
 <option value="English">English</option>
 <option value="Hindi">Hindi</option>
-<option value="French">French</option>
-<option value="German">German</option>
-<option value="Mandarin">Mandarin</option>
+<option value="Other">Other</option>
 </select>
 <br>
-Choose Mode : <input type="radio" name="mode" value="user" checked>User<input type="radio" name="mode" value="retailer">Retailer<br>
-Gender : <input type="radio" name="gender" value="male"checked>Male<input type="radio" name="gender" value="female">Female<br>
-Email id : <input type="email" class="text" name="email"></textarea><br>
-I am above the age of 18 : <input type="checkbox" name="age" required><br>
-Privacy Policy : <input type="checkbox" name="privacy" value="policy" required> I here by agree to the <a href="https://policies.google.com/privacy?hl=en-US
+
+Gender : <input type="radio" name="gender" value="male">Male<input type="radio" name="gender" value="female">Female<br>
+Mode : <input type="radio" name="mode" value="user" checked>User<input type="radio" name="mode" value="retailer">Retailer<br>
+<!--I am above the age of 18 : <input type="checkbox" name="age" class="checkmark" required><br>-->
+&nbsp&nbsp&nbsp&nbsp<input type="checkbox" name="privacy" value="policy" class="checkmark"  required> I here by agree to the <a href="https://policies.google.com/privacy?hl=en-US
 ">privacy policy</a><br>
-<input type="Submit" onClick="Submit()" value=Submit class="button">&nbsp&nbsp
-<input type="Reset" value=Reset class="button"></br>
-<button type="Cancel" value=Cancel class="button" href="file:///C:/HTML/HTML%20Day%204/0006/bla3.html">Cancel</button></font> <br></font>
-Click here to <a href="file:///C:/HTML/HTML%20Day%204/0006/log.html">login</a>
+<input type="submit" value=Submit class="button" >&nbsp&nbsp
+<input type="Reset" value=Reset class="button">&nbsp&nbsp
+<button type="button" value=Cancel class="button" onClick="cancel()" href="file:///C:/HTML/HTML%20Day%204/0006/bla3.html">Cancel</button></font> <br></font>
+Click here to <a href="file:///C:/HTML/HTML%20Day%204/0006/log.html">login</a><br>
 </div>
 </div>
 </form>
 </center>
-
+</ul>
 </body>
 </html>
