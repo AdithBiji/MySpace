@@ -39,8 +39,8 @@
 }
 
 .button2 {
-    display: inline-block;
-    padding: 10px;
+    
+    padding: 8px;
     height: 35px;
     width: 165px;
       font-size: 18px;
@@ -51,16 +51,18 @@
       color: grey;
       background-color: grey;
       border: none;
-      border-radius: 0px;
+      border-radius: 5px;
       box-shadow: 0 6px #333;
+    opacity: 0.8;
     }
 
-.button2:hover {background-color: white }
+.button2:hover {background-color: white; opacity: 0.8;}
 
 .button2:active {
       background-color: grey;
       box-shadow: 0 5px #333;
       transform: translateY(4px);
+      opacity: 0.8;
     }
     .a {
         border: none;
@@ -334,4 +336,27 @@
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+
+
+
+
+.but{
+	font: bold 15px arial;	
+	background-color: white;
+	color: dodgerblue;
+	padding: 5px 30px 5px 30px; 
+	transition-duration: 0.4s; 
+	border:5px; 
+	width:80%;
+	border-radius:16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    opacity: 0.8;
+}   
+.but:hover{ 
+    background-color: dodgerblue; 
+    color: white;
+    opacity: 1;
+}
+
 </style>
