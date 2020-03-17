@@ -7,7 +7,15 @@
 			background-image: url('planetlog.jpg');
 		}
 
-		
+	input[type="date"]::before
+	{
+   		color: #ffffff;
+   		content: attr(placeholder) ": ";
+	}
+	input[type="date"]:focus::before 
+	{
+   content: "" !important;
+	}
 
 
 	</style>
@@ -50,13 +58,28 @@
 	  }
 	}
 	
+	
+	function checkPh(evt)
+	{
+		var pn = (evt.which) ? evt.which : event.keyCode 
+		if(pn < 48 || pn > 57)
+		{
+			return false;
+		}
+		else
+		{
+			return true;	
+		}
+		
+	}
+	
 		</script>
 </head>
 <body bgcolor="black">
 <center>
 
 <div class = "box">
-<h1 style="text-align:center ; font-size:300%; color: black; background-color:olive">Registration Page</h1>
+<h1 style="text-align:center ; font-size:300%; color: black; background-color:olive">Create Account</h1>
 
 
 <form onsubmit="return validateForm()" action="file:///C:/HTML/HTML%20Day%204/0006/bla3.html">
@@ -66,9 +89,10 @@
 <input type=password class="text" id="password"  name="password" onkeyup="check()" placeholder="Password" required /> <br>
 <input type=password class="text" id="confirm_password" name="password2" onkeyup="check()" placeholder="Retype Password" required /> <br>
 <span style="font-size: 25px;" id='message'></span>
-
 <br><input type="email" class="text" name="email" placeholder="Email ID" required></textarea><br>
+<input type="tel" class="text" name="phno" placeholder="Phone No." onkeypress="return checkPh(event)" required></textarea><br>
 <font size="5" color="olive">
+<input placeholder = "D.O.B" class = "text" type = "text" onfocus = "(this.type = 'date')"  id = "date" required><br>
 <select class="text">
 <option value="-1">Language</option>
 <option value="English">English</option>
@@ -76,13 +100,11 @@
 <option value="Other">Other</option>
 </select>
 <br>
-
-Gender : <input type="radio" name="gender" value="male">Male<input type="radio" name="gender" value="female">Female<br>
-Mode : <input type="radio" name="mode" value="user" checked>User<input type="radio" name="mode" value="retailer">Retailer<br>
+<font color="white" size="5">Gender : </font><input type="radio" name="gender" value="male">Male<input type="radio" name="gender" value="female">Female<input type="radio" name="gender" value="other" checked>Custom<br>
+<font color="white" size="5">Acc. Type : </font><input type="radio" name="mode" value="user" checked>User<input type="radio" name="mode" value="retailer">Retailer &nbsp&nbsp<a href="#">(<font color="sky blue" size="3">learn more</font>)</a><br>
 <!--I am above the age of 18 : <input type="checkbox" name="age" class="checkmark" required><br>-->
-&nbsp&nbsp&nbsp&nbsp<input type="checkbox" name="privacy" value="policy"   required> I here by agree to the <a href="https://policies.google.com/privacy?hl=en-US
-">privacy policy</a><br>
-I am above the age of 18 : <input type="checkbox" name="age"  ><br>
+<font color="white" size="5">Policy : </font><input type="checkbox" name="policy"  required> I agree to the <a href="https://policies.google.com/privacy?hl=en-US
+"><font color="sky blue" size="5">privacy policy</font></a><br>
 <input type="submit" value=Submit class="button" />&nbsp&nbsp
 <input type="reset" value=Reset class="button" />&nbsp&nbsp
 <button type="button" value=Cancel class="button" onclick="donne()" href="file:///C:/HTML/HTML%20Day%204/0006/bla3.html">Cancel</button></font> <br></font>
